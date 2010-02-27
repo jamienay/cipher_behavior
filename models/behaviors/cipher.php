@@ -123,7 +123,7 @@ class CipherBehavior extends ModelBehavior {
 			return true;
 		}
 		
-		$this->encrypt($Model, $this->data);
+		$Model->data = $this->encrypt($Model, $Model->data);
 		return true;
 	}
 	
